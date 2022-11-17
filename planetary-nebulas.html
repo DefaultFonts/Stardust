@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardust - Planetary Nebulas</title>
+    <link rel="icon" href="images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,600;1,600&family=Overpass:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/modal.js" type="text/Javascript">
+    <link rel="stylesheet" href="js/sticky-nav.js" type="text/Javascript">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/hamburger-menu.js" type="text/Javascript">
+</head>
+
+<body>
+    <div class="header" id="nav">
+        <header>
+            <div class="container x-wrapper header-flex">
+                <a href="index.html" class="logo"><img src="images/logo.svg" class="logo-svg"
+                        alt="Black twinkle-shaped star">STARDUST</a>
+                <!-- Dropdown Menu code was loosely based on code found here: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+                <nav>
+                    <div class="dropdown-menu">
+                        <!-- Group 1 -->
+                        <p class="dropdown-origin">Nebulas Defined by Light</p>
+                        <div class="dropdown-list">
+                            <ul>
+                                <li><a href="emission-nebulas.html"><img src="images/nav-emission-nebula.png"
+                                            class="nav-img" alt="Transparent image of the Ring Nebula">Emission
+                                        Nebulas</a>
+                                </li>
+                                <li><a href="reflection-nebulas.html"><img src="images/nav-reflection-nebula.png"
+                                            class="nav-img"
+                                            alt="Transparent image of the Pleiades Star Cluster">Reflection
+                                        Nebulas</a></li>
+                                <li><a href="absorption-nebulas.html"><img src="images/nav-absorption-nebula.png"
+                                            class="nav-img" alt="Transparent image of the Horsehead Nebula">Absorption
+                                        Nebulas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <!-- Group 2 -->
+                        <p class="dropdown-origin-active">Nebulas Defined by Star Size</p>
+                        <div id="up-arrow"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <header>
+            <nav>
+                <div class="sub-nav g2">
+                    <div class="container x-wrapper">
+                        <ul>
+                            <li><a href="planetary-nebulas.html" class="active">Planetary Nebulas</a></li>
+                            <li><a href="supernova-remnants.html">Supernova Remnants</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <script src="js/sticky-nav.js"></script>
+
+    <!-- Code from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+    <div class="topnav">
+        <a href="index.html" class="logo home"><img src="images/logo.svg" class="logo-svg"
+                alt="Black twinkle-shaped star">STARDUST</a>
+        <div id="myLinks">
+            <a href="emission-nebulas.html">Emission Nebulas</a>
+            <a href="reflection-nebulas.html">Reflection Nebulas</a>
+            <a href="absorption-nebulas.html">Absorption Nebulas</a>
+            <a href="planetary-nebulas.html" class="active">Planetary Nebulas</a>
+            <a href="supernova-remnants.html">Supernova Remnants</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <button href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+    <script src="js/hamburger-menu.js"></script>
+    <!-- end of code -->
+    <!-- Note: I can tell that having the sticky scroll not apply to this form of nav is screwing with the scrolling on the page (when at media query size), but I don't know how to fix this without placing it after the hamburger menu script, which invalidates the hamburger script all together. -->
+
+    <section class="xy-wrapper container">
+        <section class="feature-grid y-wrapper">
+            <div class="title-block">
+                <h1>PLANETARY NEBULAS</h1>
+            </div>
+            <div class="rectangle-l">
+                <img id="modal-img" src="images/planetary-nebula/cats-eye-nebula.jpg"
+                    class="info-page-pics feature modal-img" alt="Photo of the Cat's Eye Nebula">
+            </div>
+        </section>
+        <section class="y-wrapper">
+            <div class="info-grid">
+                <div class="text-container">
+                    <h2>What is a Planetary Nebula?</h2>
+                    <p>
+                        A type of emission nebula produced by the death of a low-mass star. When a star runs out of
+                        hydrogen to fuse, it will eject its outermost layer, and then continue fusion with helium. It
+                        follows this pattern until it runs out of fusion material, at which point it fully dies. This
+                        process is responsible for the concentric circular patterns that can sometimes be found in
+                        planetary nebulas. Additionally, because the star continues fusion after ejecting its outer
+                        layer, that dust and gas become hot enough to glow – making it an emission nebula. When our sun
+                        eventually dies, it will become this type of nebula.
+                    </p><br>
+                    <h2>Why do we call it a Planetary Nebula?</h2>
+                    <p class="last-item">
+                        This name is the least logical of the bunch. When planetary nebulas were first discovered,
+                        astronomers were only able to see them through a small telescope and thought they kind of looked
+                        like planets. It's worth mentioning that they actually don't have anything to do with planets.
+                    </p>
+                </div>
+                <div class="caption-container" id="itemf2">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Cat's Eye Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">3,000 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">December 18, 2019</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a href="https://www.nasa.gov/feature/goddard/caldwell-6">NASA, ESA,
+                            HEIC, and the Hubble Heritage Team (STScI/AURA); Acknowledgment: R. Corradi (Isaac Newton
+                            Group of Telescopes, Spain) and Z. Tsvetanov (NASA)</a></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="y-wrapper">
+                <div class="title-block">
+                    <h2>Other Examples</h2>
+                </div>
+            </div>
+            <div class="examples-grid">
+                <!-- Butterfly Nebula -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/planetary-nebula/butterfly-nebula.jpg"
+                        class="info-page-pics item1 small-pic modal-img" alt="Photo of the Butterfly Nebula">
+                </div>
+                <div class="caption-container item2">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Butterfly Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">2,100 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">December 8, 2017</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://images.nasa.gov/details-GSFC_20171208_Archive_e000637">NASA Goddard</a></p>
+                </div>
+                <!-- Ring Nebula -->
+                <div class="rectangle-m">
+                    <img id="modal-img" src="images/planetary-nebula/ring-nebula.jpg"
+                        class="info-page-pics item3 modal-img" alt="Photo of the Ring Nebula">
+                </div>
+                <div class="caption-container item4">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Ring Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope and ground-based Large Binocular Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light and Infrared</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">2,000 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">May 23, 2013 </p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://www.nasa.gov/mission_pages/hubble/science/ring-nebula.html">NASA, ESA</a></p>
+                </div>
+                <!-- Hourglass Nebula -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/planetary-nebula/hourglass-nebula.jpg"
+                        class="info-page-pics item5 modal-img" alt="Photo of the Hourglass Nebula">
+                </div>
+                <div class="caption-container item6">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Hourglass Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">8,000 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">January 16, 1996</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://www.jpl.nasa.gov/images/pia14442-hubble-finds-an-hourglass-nebula-around-a-dying-star">NASA/JPL-Caltech/ESA,
+                            the Hubble Heritage Team (STScI/AURA)</a></p>
+                </div>
+                <!-- Spirograph Nebula -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/planetary-nebula/spirograph-nebula.jpg"
+                        class="info-page-pics item7 small-pic modal-img" alt="Photo of the Spirograph Nebula">
+                </div>
+                <!-- Code for modal borrowed from https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+                <!-- The Modal -->
+                <div id="modal" class="modal">
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+                </div>
+                <script src="js/modal.js"></script>
+                <div class="caption-container item8">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Orion Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">2,100 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">December 8, 2017</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://images.nasa.gov/details-GSFC_20171208_Archive_e000034">NASA Goddard</a></p>
+                </div>
+                <div class="learn-more">
+                    <p>Click below for even more information on Planetary Nebulas</p>
+                    <a href="https://www.schoolsobservatory.org/learn/astro/stars/cycle/planetary"
+                        class="button slide-right">
+                        <h4>Learn More</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="x-wrapper">
+        <div class="container">
+            <h4 class="sources-header">SOURCES</h4>
+            <div class="footer-grid">
+                <div class="sources">
+                    <a href="https://esahubble.org/wordbank/planetary-nebula/">
+                        <h3>"Planetary Nebula | ESA/Hubble"</h3>
+                        <p class="caption last-item">by NASA ESA/Hubble</p>
+                    </a>
+                </div>
+                <div class="sources">
+                    <a href="https://www.schoolsobservatory.org/learn/astro/stars/cycle/planetary">
+                        <h3>"Planetary Nebula"</h3>
+                        <p class="caption last-item">by National Schools' Observatory</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

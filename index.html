@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardust - Home</title>
+    <link rel="icon" href="images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,600;1,600&family=Overpass:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/gallery.js" type="text/Javascript">
+    <link rel="stylesheet" href="js/sticky-nav.js" type="text/Javascript">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/hamburger-menu.js" type="text/Javascript">
+</head>
+
+<body>
+    <div class="header" id="nav">
+        <header>
+            <div class="container x-wrapper header-flex">
+                <a href="index.html" class="logo"><img src="images/logo.svg" class="logo-svg"
+                        alt="Black twinkle-shaped star">STARDUST</a>
+                <!-- Dropdown Menu code was loosely based on code found here: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+                <nav>
+                    <div class="dropdown-menu">
+                        <!-- Group 1 -->
+                        <p class="dropdown-origin">Nebulas Defined by Light</p>
+                        <div class="dropdown-list">
+                            <ul>
+                                <li><a href="emission-nebulas.html"><img src="images/nav-emission-nebula.png"
+                                            class="nav-img" alt="Transparent image of the Ring Nebula">Emission
+                                        Nebulas</a>
+                                </li>
+                                <li><a href="reflection-nebulas.html"><img src="images/nav-reflection-nebula.png"
+                                            class="nav-img"
+                                            alt="Transparent image of the Pleiades Star Cluster">Reflection
+                                        Nebulas</a></li>
+                                <li><a href="absorption-nebulas.html"><img src="images/nav-absorption-nebula.png"
+                                            class="nav-img" alt="Transparent image of the Horsehead Nebula">Absorption
+                                        Nebulas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <!-- Group 2 -->
+                        <p class="dropdown-origin">Nebulas Defined by Star Size</p>
+                        <div class="dropdown-list">
+                            <ul>
+                                <li><a href="planetary-nebulas.html"><img src="images/nav-planetary-nebula.png"
+                                            class="nav-img" alt="Transparent image of the Cat's Eye Nebula">Planetary
+                                        Nebulas</a></li>
+                                <li><a href="supernova-remnants.html"><img src="images/nav-supernova-remnant.png"
+                                            class="nav-img"
+                                            alt="Transparent image of the Cassiopeia A Supernova Remnant">Supernova
+                                        Remnants</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <script src="js/sticky-nav.js"></script>
+
+    <!-- Code from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+    <div class="topnav">
+        <a href="index.html" class="logo home"><img src="images/logo.svg" class="logo-svg"
+                alt="Black twinkle-shaped star">STARDUST</a>
+        <div id="myLinks">
+            <a href="emission-nebulas.html">Emission Nebulas</a>
+            <a href="reflection-nebulas.html">Reflection Nebulas</a>
+            <a href="absorption-nebulas.html">Absorption Nebulas</a>
+            <a href="planetary-nebulas.html">Planetary Nebulas</a>
+            <a href="supernova-remnants.html">Supernova Remnants</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <button href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+    <script src="js/hamburger-menu.js"></script>
+    <!-- end of code -->
+    <!-- Note: I can tell that having the sticky scroll not apply to this form of nav is screwing with the scrolling on the page (when at media query size), but I don't know how to fix this without placing it after the hamburger menu script, which invalidates the hamburger script all together. -->
+
+    <section>
+        <section class="container">
+            <!-- Image Gallery Code borrowed from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+            <div class="wrapper-home">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="slides fade">
+                        <div class="numbertext">1 / 25</div>
+                        <img class="gallery-pics" src="images/emission-nebula/carina-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Carina Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="emission-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://esahubble.org/images/heic1007e/">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">2 / 25</div>
+                        <img class="gallery-pics move-down1" src="images/emission-nebula/orion-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Orion Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="emission-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://www.nasa.gov/feature/goddard/2017/messier-42-the-orion-nebula">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">3 / 25</div>
+                        <img class="gallery-pics" src="images/planetary-nebula/butterfly-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Butterfly Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="planetary-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://images.nasa.gov/details-GSFC_20171208_Archive_e000637">Image
+                                    Source</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">4 / 25</div>
+                        <img class="gallery-pics object-fit" src="images/supernova-remnants/cassiopeia-a.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Cassiopeia A</h4>
+                            <div class="bottom-left gallery-caption"><a href="supernova-remnants.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://www.nasa.gov/mission_pages/chandra/images/chandra-reveals-the-elementary-nature-of-cassiopeia-a.html">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">5 / 25</div>
+                        <img class="gallery-pics object-fit" src="images/planetary-nebula/spirograph-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Spirograph Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="planetary-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://images.nasa.gov/details-GSFC_20171208_Archive_e000034">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">6 / 25</div>
+                        <img class="gallery-pics" src="images/supernova-remnants/veil-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Veil Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="supernova-remnants.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://www.nasa.gov/image-feature/goddard/2021/hubble-revisits-the-veil-nebula">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">7 / 25</div>
+                        <img class="gallery-pics object-fit" src="images/absorption-nebula/e-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">E Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="absorption-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://commons.wikimedia.org/wiki/File:ENebulaHunterWilson.jpg">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">8 / 25</div>
+                        <img class="gallery-pics move-down2" src="images/absorption-nebula/cone-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Cone Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="absorption-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://www.nasa.gov/multimedia/imagegallery/image_feature_686.html">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">9 / 25</div>
+                        <img class="gallery-pics" src="images/reflection-nebula/ngc-1999.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">NGC 1999</h4>
+                            <div class="bottom-left gallery-caption"><a href="reflection-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://esahubble.org/images/potw2243a/">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">10 / 25</div>
+                        <img class="gallery-pics" src="images/planetary-nebula/cats-eye-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Cat's Eye Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="planetary-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://www.nasa.gov/feature/goddard/caldwell-6">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">11 / 25</div>
+                        <img class="gallery-pics" src="images/reflection-nebula/ic-2631.png">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">IC 2631 </h4>
+                            <div class="bottom-left gallery-caption"><a href="reflection-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://webbtelescope.org/contents/media/images/2018/14/4119-Image?news=true">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">12 / 25</div>
+                        <img class="gallery-pics object-fit" src="images/planetary-nebula/hourglass-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Hourglass Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="planetary-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://www.jpl.nasa.gov/images/pia14442-hubble-finds-an-hourglass-nebula-around-a-dying-star">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">13 / 25</div>
+                        <img class="gallery-pics move-down3" src="images/emission-nebula/lagoon-nebula.png">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Lagoon Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="emission-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://www.nasa.gov/feature/goddard/2018/lagoon-nebula-visible-light-view/">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">14 / 25</div>
+                        <img class="gallery-pics" src="images/emission-nebula/trifid-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Trifid Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="emission-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://science.nasa.gov/center-trifid-nebula">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">15 / 25</div>
+                        <img class="gallery-pics" src="images/reflection-nebula/m78.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">M78 </h4>
+                            <div class="bottom-left gallery-caption"><a href="reflection-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://www.eso.org/public/images/eso1105a/">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">16 / 25</div>
+                        <img class="gallery-pics move-down4" src="images/absorption-nebula/horsehead-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Horsehead Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="absorption-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://www.eso.org/public/images/eso0102a/">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">17 / 25</div>
+                        <img class="gallery-pics move-down6" src="images/reflection-nebula/pleiades.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Pleiades Star Cluster </h4>
+                            <div class="bottom-left gallery-caption"><a href="reflection-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://en.wikipedia.org/wiki/File:Pleiades_large.jpg">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">18 / 25</div>
+                        <img class="gallery-pics object-fit" src="images/absorption-nebula/barnard-68.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Barnard 68 </h4>
+                            <div class="bottom-left gallery-caption"><a href="absorption-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://commons.wikimedia.org/wiki/File:Barnard_68.jpg">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">19 / 25</div>
+                        <img class="gallery-pics" src="images/absorption-nebula/snake-nebula.png">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Snake Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="absorption-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://webbtelescope.org/contents/media/images/2020/14/4644-Image">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">20 / 25</div>
+                        <img class="gallery-pics" src="images/planetary-nebula/ring-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Ring Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="planetary-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://www.nasa.gov/mission_pages/hubble/science/ring-nebula.html">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">21 / 25</div>
+                        <img class="gallery-pics" src="images/reflection-nebula/blue-horsehead-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Blue Horsehead Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="reflection-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://en.wikipedia.org/wiki/File:Rho_Ophiucus_Widefield.jpg">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">22 / 25</div>
+                        <img class="gallery-pics object-fit" src="images/supernova-remnants/kepler-supernova.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Kepler Supernova </h4>
+                            <div class="bottom-left gallery-caption"><a href="supernova-remnants.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://images.nasa.gov/details-0401554">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">23 / 25</div>
+                        <img class="gallery-pics object-fit" src="images/supernova-remnants/tycho-supernova.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Tycho Supernova </h4>
+                            <div class="bottom-left gallery-caption"><a href="supernova-remnants.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://www.nasa.gov/image-feature/the-tycho-supernova-death-of-a-star">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">24 / 25</div>
+                        <img class="gallery-pics" src="images/supernova-remnants/crab-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Crab Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="supernova-remnants.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://www.nasa.gov/multimedia/imagegallery/image_feature_1604.html">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">25 / 25</div>
+                        <img class="gallery-pics move-down5" src="images/emission-nebula/eagle-nebula.jpg">
+                        <div class="gallery-caption-box">
+                            <h4 class="mid-left">Eagle Nebula</h4>
+                            <div class="bottom-left gallery-caption"><a href="emission-nebulas.html">See More</a>
+                            </div>
+                            <div class="bottom-right gallery-caption"><a
+                                    href="https://apod.nasa.gov/apod/ap150107.html">Image
+                                    Source</a></div>
+                        </div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <!-- Note: James Smith helped me figure out that these needed to be buttons (in the original code they were a tags) -->
+                    <button class="prev" onclick="plusSlides(-1)">&#9664;</button>
+                    <button class="next" onclick="plusSlides(1)">
+                        <p class="bounce">&#9654;</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <script src="js/gallery.js"></script>
+
+
+        <section class="container">
+            <div class="wrapper-home y-wrapper-home">
+                <div class="text-container">
+                    <h2>What is a Nebula?</h2>
+                    <p>
+                        A nebula is a giant cloud of dust and gas made from the remnants of a dead star. When a star is
+                        alive,
+                        it spends the majority of its time doing a process called nuclear fusion. Fusion is kind of like
+                        adding
+                        two elements together to make one bigger element instead. Stars like to use the smallest
+                        elements
+                        first,
+                        meaning it always starts fusing hydrogen into helium, but in order to pull off this process, it
+                        needs a
+                        lot of hydrogen. Eventually, it runs out of hydrogen and starts using helium instead. It can
+                        continue
+                        fusion all the way until it reaches iron, at which point, there's no way for it to make any more
+                        energy,
+                        and it dies. When it reaches the end of its lifespan, the star explodes, flinging all the
+                        elements
+                        it
+                        created into a giant cloud in space. We call these clouds “nebula.” The bigger the star, the
+                        more
+                        dust
+                        is ejected in the explosion, and the bigger the nebula.
+                    <p>The dust and gas are ejected from the dead star with such force that it slams together and starts
+                        spinning. Eventually, it starts to attract more and more dust from the cloud and starts to get
+                        bigger.
+                        When it gets enough material, it starts nuclear fusion, making it a brand-new star! In this
+                        sense,
+                        nebulas can be thought of as both a graveyard and a nursery, since they're a product of a dead
+                        star,
+                        but
+                        also responsible for creating new ones. That means that nothing is ever actually destroyed in
+                        the
+                        universe. It's just turned into something new!</p>
+                    </p>
+                    <br>
+                    <h2>How Are Nebulas Categorized?</h2>
+                    <p class="last-item">
+                        In total, there are 5 categories for nebulas. There are Emission Nebulas, Reflection Nebulas,
+                        and
+                        Absorption (or dark) Nebulas, which are all defined by the appearance of light, and there are
+                        also
+                        Planetary Nebulas, and Supernova Remnants, which are defined by the size of the star that died
+                        in
+                        order
+                        to create the nebula. A nebula can actually fit into several of these categories at once.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="x-wrapper">
+        <div class="container">
+            <h4 class="sources-header">SOURCES</h4>
+            <div class="footer-grid">
+                <div class="sources">
+                    <a href="https://abyss.uoregon.edu/~js/ast122/lectures/lec18.html">
+                        <h3>"Stellar Death"</h3>
+                        <p class="caption last-item">by University of Oregon</p>
+                    </a>
+                </div>
+                <div class="sources">
+                    <a href="https://spaceplace.nasa.gov/nebula/en/">
+                        <h3>"What is a Nebula?"</h3>
+                        <p class="caption last-item">by NASA Science for Kids</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

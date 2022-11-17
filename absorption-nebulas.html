@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardust - Absorption Nebulas</title>
+    <link rel="icon" href="images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,600;1,600&family=Overpass:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/modal.js" type="text/Javascript">
+    <link rel="stylesheet" href="js/sticky-nav.js" type="text/Javascript">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/hamburger-menu.js" type="text/Javascript">
+</head>
+
+<body>
+    <div class="header" id="nav">
+        <header>
+            <div class="container x-wrapper header-flex">
+                <a href="index.html" class="logo"><img src="images/logo.svg" class="logo-svg"
+                        alt="Black twinkle-shaped star">STARDUST</a>
+                <!-- Dropdown Menu code was loosely based on code found here: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+                <nav>
+                    <div class="dropdown-menu">
+                        <!-- Group 1 -->
+                        <p class="dropdown-origin-active">Nebulas Defined by Light</p>
+                        <div id="up-arrow"></div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <!-- Group 2 -->
+                        <p class="dropdown-origin">Nebulas Defined by Star Size</p>
+                        <div class="dropdown-list">
+                            <ul>
+                                <li><a href="planetary-nebulas.html"><img src="images/nav-planetary-nebula.png"
+                                            class="nav-img" alt="Transparent image of the Cat's Eye Nebula">Planetary
+                                        Nebulas</a></li>
+                                <li><a href="supernova-remnants.html"><img src="images/nav-supernova-remnant.png"
+                                            class="nav-img"
+                                            alt="Transparent image of the Cassiopeia A Supernova Remnant">Supernova
+                                        Remnants</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <header>
+            <nav>
+                <div class="sub-nav">
+                    <div class="container x-wrapper">
+                        <ul>
+                            <li><a href="emission-nebulas.html">Emission Nebulas</a></li>
+                            <li><a href="reflection-nebulas.html">Reflection Nebulas</a></li>
+                            <li><a href="absorption-nebulas.html" class="active">Absorption Nebulas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <script src="js/sticky-nav.js"></script>
+
+    <!-- Code from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+    <div class="topnav">
+        <a href="index.html" class="logo home"><img src="images/logo.svg" class="logo-svg"
+                alt="Black twinkle-shaped star">STARDUST</a>
+        <div id="myLinks">
+            <a href="emission-nebulas.html">Emission Nebulas</a>
+            <a href="reflection-nebulas.html">Reflection Nebulas</a>
+            <a href="absorption-nebulas.html" class="active">Absorption Nebulas</a>
+            <a href="planetary-nebulas.html">Planetary Nebulas</a>
+            <a href="supernova-remnants.html">Supernova Remnants</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <button href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+    <script src="js/hamburger-menu.js"></script>
+    <!-- end of code -->
+    <!-- Note: I can tell that having the sticky scroll not apply to this form of nav is screwing with the scrolling on the page (when at media query size), but I don't know how to fix this without placing it after the hamburger menu script, which invalidates the hamburger script all together. -->
+
+    <section class="xy-wrapper container">
+        <section class="feature-grid y-wrapper">
+            <div class="title-block">
+                <h1>ABSORPTION NEBULAS</h1>
+            </div>
+            <div class="rectangle-l">
+                <img id="modal-img" src="images/absorption-nebula/horsehead-nebula.jpg"
+                    class="info-page-pics feature modal-img" alt="Photo of the Horsehead Nebula">
+            </div>
+        </section>
+        <section class="y-wrapper">
+            <div class="info-grid">
+                <div class="text-container">
+                    <h2>What is an Absorption Nebula?</h2>
+                    <p>
+                        Also known as dark nebulas, these nebulas are so dense that they actually block the light behind
+                        them. It's kind of like when a storm cloud has so much water in it that it blots out the sun and
+                        makes the sky look dark gray. The reason we are able to see these nebulas at all is thanks to an
+                        emission nebula behind it. As mentioned earlier, a nebula can be more than one type at a time,
+                        and in the case of the absorption nebula, we only know it's there because it blocks out the
+                        light of whatever is behind it (whether that be an emission nebula or just a star cluster). Many
+                        absorption nebulas just look like a hole in space (see below for examples). </p><br>
+                    <h2>Why do we call it an Absorption Nebula?</h2>
+                    <p class="last-item">
+                        These clouds of dust <i>absorb</i> any light behind them, rather than reflecting it. This is
+                        because they're so dense that they just block the light behind them, meaning that, from Earth,
+                        we only see the outline of the cloud. </p>
+                </div>
+                <div class="caption-container" id="itemf2">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Horsehead Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Photographer's personal ground-based telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">1,600 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">January 21, 2011</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a href="https://en.wikipedia.org/wiki/File:Barnard_33.jpg">Ken
+                            Crawford via Wikimedia Commons</a></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="y-wrapper">
+                <div class="title-block">
+                    <h2>Other Examples</h2>
+                </div>
+            </div>
+            <div class="examples-grid">
+                <!-- Cone Nebula -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/absorption-nebula/cone-nebula.jpg"
+                        class="info-page-pics item1 small-pic modal-img" alt="Photo of the Cone Nebula">
+                </div>
+                <div class="caption-container item2">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Cone Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">2,500 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">March 23, 2008</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://www.nasa.gov/multimedia/imagegallery/image_feature_686.html">NASA, H. Ford
+                            (JHU), G. Illingworth (UCSC/LO), M. Clampin (STScI), G. Hartig (STScI), the ACS Science Team
+                            and ESA</a></p>
+                </div>
+                <!-- Barnard 68 -->
+                <div class="rectangle-m">
+                    <img id="modal-img" src="images/absorption-nebula/barnard-68.jpg"
+                        class="info-page-pics item3 modal-img" alt="Photo of Barnard 68">
+                </div>
+                <div class="caption-container item4">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">Barnard 68</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">VLT ANTU Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible and Near Infrared</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">500 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">March 1999 </p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a href="https://www.eso.org/public/images/eso0102a/">ESO</a></p>
+                </div>
+                <!-- E Nebula -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/absorption-nebula/e-nebula.jpg"
+                        class="info-page-pics item5 modal-img" alt="Photo of the E Nebula">
+                </div>
+                <div class="caption-container item6">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The E Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Unknown</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">2,000 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">June 5, 2008 </p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://commons.wikimedia.org/wiki/File:ENebulaHunterWilson.jpg">Hewholooks via
+                            Wikimedia Commons </a></p>
+                </div>
+                <!-- Snake Nebula -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/absorption-nebula/snake-nebula.png"
+                        class="info-page-pics item7 small-pic modal-img" alt="Photo of the Snake Nebula">
+                </div>
+                <!-- Code for modal borrowed from https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+                <!-- The Modal -->
+                <div id="modal" class="modal">
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+                </div>
+                <script src="js/modal.js"></script>
+                <div class="caption-container item8">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Snake Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Spitzer Infrared Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Infrared</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">10,800 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">April 10, 2020</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://webbtelescope.org/contents/media/images/2020/14/4644-Image">NASA, Caltech,
+                            Sean Carey (SSC)</a></p>
+                </div>
+                <div class="learn-more">
+                    <p>Click below for even more information on Absorption Nebulas</p>
+                    <a href="https://earthsky.org/astronomy-essentials/dark-nebulae-molecular-clouds-dust/"
+                        class="button slide-right">
+                        <h4>Learn More</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Note: Footer section was intentionally deleted on this page, since I only had one source, which I linked to the "learn more" button -->
+
+</body>
+
+</html>

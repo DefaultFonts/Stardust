@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardust - Supernova Remnants</title>
+    <link rel="icon" href="images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,600;1,600&family=Overpass:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/modal.js" type="text/Javascript">
+    <link rel="stylesheet" href="js/sticky-nav.js" type="text/Javascript">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/hamburger-menu.js" type="text/Javascript">
+</head>
+
+<body>
+    <div class="header" id="nav">
+        <header>
+            <div class="container x-wrapper header-flex">
+                <a href="index.html" class="logo"><img src="images/logo.svg" class="logo-svg"
+                        alt="Black twinkle-shaped star">STARDUST</a>
+                <!-- Dropdown Menu code was loosely based on code found here: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+                <nav>
+                    <div class="dropdown-menu">
+                        <!-- Group 1 -->
+                        <p class="dropdown-origin">Nebulas Defined by Light</p>
+                        <div class="dropdown-list">
+                            <ul>
+                                <li><a href="emission-nebulas.html"><img src="images/nav-emission-nebula.png"
+                                            class="nav-img" alt="Transparent image of the Ring Nebula">Emission
+                                        Nebulas</a>
+                                </li>
+                                <li><a href="reflection-nebulas.html"><img src="images/nav-reflection-nebula.png"
+                                            class="nav-img"
+                                            alt="Transparent image of the Pleiades Star Cluster">Reflection
+                                        Nebulas</a></li>
+                                <li><a href="absorption-nebulas.html"><img src="images/nav-absorption-nebula.png"
+                                            class="nav-img" alt="Transparent image of the Horsehead Nebula">Absorption
+                                        Nebulas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <!-- Group 2 -->
+                        <p class="dropdown-origin-active">Nebulas Defined by Star Size</p>
+                        <div id="up-arrow"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <header>
+            <nav>
+                <div class="sub-nav g2">
+                    <div class="container x-wrapper">
+                        <ul>
+                            <li><a href="planetary-nebulas.html">Planetary Nebulas</a></li>
+                            <li><a href="supernova-remnants.html" class="active">Supernova Remnants</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <script src="js/sticky-nav.js"></script>
+
+    <!-- Code from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+    <div class="topnav">
+        <a href="index.html" class="logo home"><img src="images/logo.svg" class="logo-svg"
+                alt="Black twinkle-shaped star">STARDUST</a>
+        <div id="myLinks">
+            <a href="emission-nebulas.html">Emission Nebulas</a>
+            <a href="reflection-nebulas.html">Reflection Nebulas</a>
+            <a href="absorption-nebulas.html">Absorption Nebulas</a>
+            <a href="planetary-nebulas.html">Planetary Nebulas</a>
+            <a href="supernova-remnants.html" class="active">Supernova Remnants</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <button href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+    <script src="js/hamburger-menu.js"></script>
+    <!-- end of code -->
+    <!-- Note: I can tell that having the sticky scroll not apply to this form of nav is screwing with the scrolling on the page (when at media query size), but I don't know how to fix this without placing it after the hamburger menu script, which invalidates the hamburger script all together. -->
+
+    <section class="xy-wrapper container">
+        <section class="feature-grid y-wrapper">
+            <div class="title-block">
+                <h1>SUPERNOVA REMNANTS</h1>
+            </div>
+            <div class="rectangle-l">
+                <img id="modal-img" src="images/supernova-remnants/crab-nebula.jpg"
+                    class="info-page-pics feature modal-img" alt="Photo of the Crab Nebula">
+            </div>
+        </section>
+        <section class="y-wrapper">
+            <div class="info-grid">
+                <div class="text-container">
+                    <h2>What is a Supernova Remnant?</h2>
+                    <p>
+                        When a high-mass star dies, it does so with such a high amount of energy and force that any dust
+                        or gas around it collides in a powerful shock wave. Whereas a low-mass star dies in waves
+                        (ejecting the outermost layers one by one), a high-mass star ejects the majority of its' mass
+                        all at once in a massive explosion. When the explosion occurs, the gas itself can become so hot
+                        that the glow it produces outshines even our own sun, but this glow only lasts a short time (a
+                        couple of weeks or months) before dying down again. After a high-mass star ejects the majority
+                        of its mass, it then collapses on itself, creating either a black hole or a pulsar.
+                    </p><br>
+                    <h2>Why do we call it a Supernova Remnant?</h2>
+                    <p class="last-item">
+                        These nebulas are literally just the remains of a supernova explosion. It includes all the gas
+                        and dust that were ejected by the star, as well as any other gas or dust that it may have caught
+                        in the path of the explosion.
+                    </p>
+                </div>
+                <div class="caption-container" id="itemf2">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Crab Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">6,500 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">March 2, 2010</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://www.nasa.gov/multimedia/imagegallery/image_feature_1604.html">NASA, ESA, J.
+                            Hester, A. Loll (ASU)</a></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="y-wrapper">
+                <div class="title-block">
+                    <h2>Other Examples</h2>
+                </div>
+            </div>
+            <div class="examples-grid">
+                <!-- Cassiopeia A -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/supernova-remnants/cassiopeia-a.jpg"
+                        class="info-page-pics item1 small-pic modal-img" alt="Photo of Cassiopeia A">
+                </div>
+                <div class="caption-container item2">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">Cassiopeia A</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Chandra X-Ray Observatory</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">X-Ray</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">11,000 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">December 12, 2017</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a href="imagesource">NASA/CXC/SAO</a></p>
+                </div>
+                <!-- Veil Nebula -->
+                <div class="rectangle-m">
+                    <img id="modal-img" src="images/supernova-remnants/veil-nebula.jpg"
+                        class="info-page-pics item3 modal-img" alt="Photo of the Veil Nebula">
+                </div>
+                <div class="caption-container item4">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Veil Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">2,100 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">April 2, 2021</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://www.nasa.gov/image-feature/goddard/2021/hubble-revisits-the-veil-nebula">ESA/Hubble
+                            & NASA, Z. Levay</a></p>
+                </div>
+                <!-- Tycho Supernova -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/supernova-remnants/tycho-supernova.jpg"
+                        class="info-page-pics item5 modal-img" alt="Photo of the Tycho Supernova">
+                </div>
+                <div class="caption-container item6">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Tycho Supernova</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Chandra X-Ray Observatory</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">X-Ray and Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">13,000 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">October 18, 2019</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://www.nasa.gov/image-feature/the-tycho-supernova-death-of-a-star">X-Ray:
+                            NASA/CXC/RIKEN & GSFC/T. Sato et al;
+                            Optical: DSS</a></p>
+                </div>
+                <!-- Kepler Supernova -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/supernova-remnants/kepler-supernova.jpg"
+                        class="info-page-pics item7 small-pic modal-img" alt="Photo of the Kepler Supernova">
+                </div>
+                <!-- Code for modal borrowed from https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+                <!-- The Modal -->
+                <div id="modal" class="modal">
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+                </div>
+                <script src="js/modal.js"></script>
+                <div class="caption-container item8">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Kepler Supernova</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope, Spitzer Infrared Telescope, and Chandra X-Ray Observatory
+                    </p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Infrared, Visible Light, and X-Rays</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">20,000 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">October 7, 2004</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a href="https://images.nasa.gov/details-0401554">NASA</a></p>
+                </div>
+                <div class="learn-more">
+                    <p>Click below for even more information on Supernova Remnants</p>
+                    <a href="https://www.britannica.com/science/supernova-remnant" class="button slide-right">
+                        <h4>Learn More</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="x-wrapper">
+        <div class="container">
+            <h4 class="sources-header">SOURCES</h4>
+            <div class="footer-grid">
+                <div class="sources">
+                    <a href="https://www.britannica.com/science/supernova-remnant">
+                        <h3>"Supernova Remnant | Astronomy"</h3>
+                        <p class="caption last-item">by Britannica</p>
+                    </a>
+                </div>
+                <div class="sources">
+                    <a href="https://www.britannica.com/science/supernova">
+                        <h3>"Supernova | Definition, Types & Facts"</h3>
+                        <p class="caption last-item">by Britannica</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

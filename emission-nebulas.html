@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardust - Emission Nebulas</title>
+    <link rel="icon" href="images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,600;1,600&family=Overpass:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/modal.js" type="text/Javascript">
+    <link rel="stylesheet" href="js/sticky-nav.js" type="text/Javascript">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/hamburger-menu.js" type="text/Javascript">
+
+</head>
+
+<body>
+    <div class="header" id="nav">
+        <header>
+            <div class="container x-wrapper header-flex">
+                <a href="index.html" class="logo"><img src="images/logo.svg" class="logo-svg"
+                        alt="Black twinkle-shaped star">STARDUST</a>
+                <!-- Dropdown Menu code was loosely based on code found here: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+                <nav>
+                    <div class="dropdown-menu">
+                        <!-- Group 1 -->
+                        <p class="dropdown-origin-active">Nebulas Defined by Light</p>
+                        <div id="up-arrow"></div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <!-- Group 2 -->
+                        <p class="dropdown-origin">Nebulas Defined by Star Size</p>
+                        <div class="dropdown-list">
+                            <ul>
+                                <li><a href="planetary-nebulas.html"><img src="images/nav-planetary-nebula.png"
+                                            class="nav-img" alt="Transparent image of the Cat's Eye Nebula">Planetary
+                                        Nebulas</a></li>
+                                <li><a href="supernova-remnants.html"><img src="images/nav-supernova-remnant.png"
+                                            class="nav-img"
+                                            alt="Transparent image of the Cassiopeia A Supernova Remnant">Supernova
+                                        Remnants</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <header>
+            <nav>
+                <div class="sub-nav">
+                    <div class="container x-wrapper">
+                        <ul>
+                            <li><a href="emission-nebulas.html" class="active">Emission Nebulas</a></li>
+                            <li><a href="reflection-nebulas.html">Reflection Nebulas</a></li>
+                            <li><a href="absorption-nebulas.html">Absorption Nebulas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <script src="js/sticky-nav.js"></script>
+
+    <!-- Code from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+    <div class="topnav">
+        <a href="index.html" class="logo home"><img src="images/logo.svg" class="logo-svg"
+                alt="Black twinkle-shaped star">STARDUST</a>
+        <div id="myLinks">
+            <a href="emission-nebulas.html" class="active">Emission Nebulas</a>
+            <a href="reflection-nebulas.html">Reflection Nebulas</a>
+            <a href="absorption-nebulas.html">Absorption Nebulas</a>
+            <a href="planetary-nebulas.html">Planetary Nebulas</a>
+            <a href="supernova-remnants.html">Supernova Remnants</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <button href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+    <script src="js/hamburger-menu.js"></script>
+    <!-- end of code -->
+    <!-- Note: I can tell that having the sticky scroll not apply to this form of nav is screwing with the scrolling on the page (when at media query size), but I don't know how to fix this without placing it after the hamburger menu script, which invalidates the hamburger script all together. -->
+
+    <section class="xy-wrapper container">
+        <section class="feature-grid y-wrapper">
+            <div class="title-block">
+                <h1>EMISSION NEBULAS</h1>
+            </div>
+            <div class="rectangle-l">
+                <img id="modal-img" src="images/emission-nebula/lagoon-nebula.png"
+                    class="info-page-pics feature feature-reposition modal-img" alt="Photo of the Lagoon Nebula">
+            </div>
+        </section>
+        <section class="y-wrapper">
+            <div class="info-grid">
+                <div class="text-container">
+                    <h2>What is an Emission Nebula?</h2>
+                    <p>This type of nebula produces its own light thanks to the stars that are forming in the middle of
+                        the
+                        cloud. The newborn stars produce a lot of heat, and that heat causes the cloud of dust and gas
+                        to
+                        glow.
+                        Only stars hotter than 25,000 K are able to do this, however. Any star colder than 25,000 K will
+                        create
+                        a Reflection Nebula instead. Oftentimes, emission nebulas look red, since there is an abundance
+                        of
+                        hydrogen present, which glows red when it is heated up. Since many stars are forming from the
+                        same
+                        cloud
+                        of dust and gas, their light allows for the majority of the cloud to glow and be seen, rather
+                        than
+                        just
+                        one section of the cloud.</p><br>
+                    <h2>Why do we call it an Emission Nebula?</h2>
+                    <p class="last-item">The gas and dust in the cloud of an emission nebula become so hot that it
+                        begins to
+                        <i>emit</i> its own
+                        light. Usually, an object in space that isn't a star can only be seen because it <i>reflects</i>
+                        light
+                        from a nearby star. In other words, we can only see certain objects because light shines on them
+                        from a
+                        nearby star. In the case of emission nebulas, they actually produce their own light.
+                    </p>
+                </div>
+                <div class="caption-container" id="itemf2">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Lagoon Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">4,000 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">February 18, 2018</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://www.nasa.gov/feature/goddard/2018/lagoon-nebula-visible-light-view">NASA,
+                            European Space Agency, The Space Telescope Science Institute</a></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="y-wrapper">
+                <div class="title-block">
+                    <h2>Other Examples</h2>
+                </div>
+            </div>
+            <div class="examples-grid">
+                <!-- Eagle Nebula -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/emission-nebula/eagle-nebula.jpg"
+                        class="info-page-pics item1 small-pic modal-img"
+                        alt="Photo of the Pillars of Creation in the Eagle Nebula">
+                </div>
+                <div class="caption-container item2">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Pillars of Creation (found in the Eagle Nebula)</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">7,000 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">January 7, 2015</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a href="https://apod.nasa.gov/apod/ap150107.html">NASA,
+                            European Space Agency, The Hubble Heritage Team</a></p>
+                </div>
+                <!-- Carina Nebula -->
+                <div class="rectangle-m">
+                    <img id="modal-img" src="images/emission-nebula/carina-nebula.jpg"
+                        class="info-page-pics item3 modal-img" alt="Photo of Mystic Mountain in the Carina Nebula">
+                </div>
+                <div class="caption-container item4">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">Mystic Mountain (found in the Carina Nebula)</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">7,500 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">February 2, 2010</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a href="https://esahubble.org/images/heic1007e/">NASA, ESA, and M.
+                            Livio, The
+                            Hubble Heritage Team and the Hubble 20th Anniversary Team (STScI)</a></p>
+                </div>
+                <!-- Trifid Nebula -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/emission-nebula/trifid-nebula.jpg"
+                        class="info-page-pics item5 modal-img" alt="Photo of the center of the Trifid Nebula">
+                </div>
+                <div class="caption-container item6">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Trifid Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope and Subaru Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">9,000 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">November 1, 2020</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a href="https://science.nasa.gov/center-trifid-nebula">Subaru
+                            Telescope (NAOJ),
+                            Hubble Space Telescope, Martin Pugh, Robert Gendler</a></p>
+                </div>
+                <!-- Orion Nebula -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/emission-nebula/orion-nebula.jpg"
+                        class="info-page-pics item7 small-pic modal-img" alt="Photo of the Orion Nebula">
+                </div>
+                <!-- Code for modal borrowed from https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+                <!-- The Modal -->
+                <div id="modal" class="modal">
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+                </div>
+                <script src="js/modal.js"></script>
+                <div class="caption-container item8">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Orion Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope and other ground-based telescopes</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light and Infrared</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">1,500 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">August 25, 2021</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://www.nasa.gov/feature/goddard/2017/messier-42-the-orion-nebula">NASA, ESA,
+                            M.
+                            Robberto and the Hubble Space Telescope Orion Treasury Project Team</a></p>
+                </div>
+                <div class="learn-more">
+                    <p>Click below for even more information on Emission Nebulas</p>
+                    <a href="https://theplanets.org/nebula-facts/emission-nebula/" class="button slide-right">
+                        <h4>Learn More</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="x-wrapper">
+        <div class="container">
+            <h4 class="sources-header">SOURCES</h4>
+            <div class="footer-grid">
+                <div class="sources">
+                    <a href="https://theplanets.org/nebula-facts/emission-nebula/">
+                        <h3>"Emission Nebula Facts"</h3>
+                        <p class="caption last-item">by The Planets.org</p>
+                    </a>
+                </div>
+                <div class="sources">
+                    <a href="https://www.sun.org/encyclopedia/emission-nebula">
+                        <h3>"Emission Nebula"</h3>
+                        <p class="caption last-item">by Sun.org</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

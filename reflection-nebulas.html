@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardust - Reflection Nebulas</title>
+    <link rel="icon" href="images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,600;1,600&family=Overpass:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/modal.js" type="text/Javascript">
+    <link rel="stylesheet" href="js/sticky-nav.js" type="text/Javascript">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/hamburger-menu.js" type="text/Javascript">
+</head>
+
+<body>
+    <div class="header" id="nav">
+        <header>
+            <div class="container x-wrapper header-flex">
+                <a href="index.html" class="logo"><img src="images/logo.svg" class="logo-svg"
+                        alt="Black twinkle-shaped star">STARDUST</a>
+                <!-- Dropdown Menu code was loosely based on code found here: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+                <nav>
+                    <div class="dropdown-menu">
+                        <!-- Group 1 -->
+                        <p class="dropdown-origin-active">Nebulas Defined by Light</p>
+                        <div id="up-arrow"></div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <!-- Group 2 -->
+                        <p class="dropdown-origin">Nebulas Defined by Star Size</p>
+                        <div class="dropdown-list">
+                            <ul>
+                                <li><a href="planetary-nebulas.html"><img src="images/nav-planetary-nebula.png"
+                                            class="nav-img" alt="Transparent image of the Cat's Eye Nebula">Planetary
+                                        Nebulas</a></li>
+                                <li><a href="supernova-remnants.html"><img src="images/nav-supernova-remnant.png"
+                                            class="nav-img"
+                                            alt="Transparent image of the Cassiopeia A Supernova Remnant">Supernova
+                                        Remnants</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <header>
+            <nav>
+                <div class="sub-nav">
+                    <div class="container x-wrapper">
+                        <ul>
+                            <li><a href="emission-nebulas.html">Emission Nebulas</a></li>
+                            <li><a href="reflection-nebulas.html" class="active">Reflection Nebulas</a></li>
+                            <li><a href="absorption-nebulas.html">Absorption Nebulas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <script src="js/sticky-nav.js"></script>
+
+    <!-- Code from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+    <div class="topnav">
+        <a href="index.html" class="logo home"><img src="images/logo.svg" class="logo-svg"
+                alt="Black twinkle-shaped star">STARDUST</a>
+        <div id="myLinks">
+            <a href="emission-nebulas.html">Emission Nebulas</a>
+            <a href="reflection-nebulas.html" class="active">Reflection Nebulas</a>
+            <a href="absorption-nebulas.html">Absorption Nebulas</a>
+            <a href="planetary-nebulas.html">Planetary Nebulas</a>
+            <a href="supernova-remnants.html">Supernova Remnants</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <button href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+    <script src="js/hamburger-menu.js"></script>
+    <!-- end of code -->
+    <!-- Note: I can tell that having the sticky scroll not apply to this form of nav is screwing with the scrolling on the page (when at media query size), but I don't know how to fix this without placing it after the hamburger menu script, which invalidates the hamburger script all together. -->
+
+    <section class="xy-wrapper container">
+        <section class="feature-grid y-wrapper">
+            <div class="title-block">
+                <h1>REFLECTION NEBULAS</h1>
+            </div>
+            <div class="rectangle-l">
+                <img id="modal-img" src="images/reflection-nebula/pleiades.jpg" class="info-page-pics feature modal-img"
+                    alt="Photo of the Pleiades Star Cluster">
+            </div>
+        </section>
+        <section class="y-wrapper">
+            <div class="info-grid">
+                <div class="text-container">
+                    <h2>What is a Reflection Nebula?</h2>
+                    <p>
+                        Unlike an emission nebula, this type of nebula can only be seen thanks to the light of nearby
+                        stars. These clouds are often a lot wispier. A reflection nebula will always be backlit – if it
+                        wasn't, it wouldn't be considered a reflection nebula, because we wouldn't be able to see it.
+                        Although there may be a cloud of dust and gas there, we can't see it unless a star is able to
+                        light it up. Because they get their light from the stars behind them, we can't actually see the
+                        <i>true</i> colour of the gas and dust. The cloud will actually usually appear blue since it
+                        reflects that colour of light more easily. It's the same reason our sky is blue.
+                    </p><br>
+                    <h2>Why do we call it a Reflection Nebula?</h2>
+                    <p class="last-item">
+                        Like most (non-star) objects in space, the dust found in a reflection nebula can only be seen by
+                        <i>reflecting</i> the light of a nearby star. It doesn't produce its own light, it just reflects
+                        the light around it.
+                    </p>
+                </div>
+                <div class="caption-container" id="itemf2">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Pleiades Star Cluster</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">The Palomar Schmidt Telescope</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">440 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">September 11, 1996</p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a href="https://en.wikipedia.org/wiki/File:Pleiades_large.jpg">NASA,
+                            ESA, AURA/Caltech, Palomar Observatory</a></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="y-wrapper">
+                <div class="title-block">
+                    <h2>Other Examples</h2>
+                </div>
+            </div>
+            <div class="examples-grid">
+                <!-- M78 -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/reflection-nebula/m78.jpg"
+                        class="info-page-pics item1 small-pic modal-img" alt="Photo of the M78 Nebula">
+                </div>
+                <div class="caption-container item2">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">M78</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Ground-based telescope at the La Silla Observatory</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">1,400 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">February 16, 2011 </p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a href="https://www.eso.org/public/images/eso1105a/">ESO/Igor
+                            Chekalin</a></p>
+                </div>
+                <!-- NGC 1999 -->
+                <div class="rectangle-m">
+                    <img id="modal-img" src="images/reflection-nebula/ngc-1999.jpg"
+                        class="info-page-pics item3 modal-img" alt="Photo of the NGC 1999 Nebula">
+                </div>
+                <div class="caption-container item4">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">NGC 1999</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Hubble Space Telescope and Herschel Space Observatory</p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">1,350 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">October 24, 2022 </p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a href="https://esahubble.org/images/potw2243a/">ESA/Hubble & NASA,
+                            ESO, K. Noll</a></p>
+                </div>
+                <!-- IC 2631 -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/reflection-nebula/ic-2631.png"
+                        class="info-page-pics item5 modal-img" alt="Photo of the IC 2631 Nebula">
+                </div>
+                <div class="caption-container item6">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">IC 2631</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Ground-based telescope at the European Southern Observatory </p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">500 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">March 9, 2018 </p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://webbtelescope.org/contents/media/images/2018/14/4119-Image?news=true">ESO</a>
+                    </p>
+                </div>
+                <!-- Blue Horsehead Nebula -->
+                <div class="rectangle-s">
+                    <img id="modal-img" src="images/reflection-nebula/blue-horsehead-nebula.jpg"
+                        class="info-page-pics item7 small-pic modal-img" alt="Photo of the Blue Horsehead Nebula">
+                </div>
+                <!-- Code for modal borrowed from https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+                <!-- The Modal -->
+                <div id="modal" class="modal">
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+                </div>
+                <script src="js/modal.js"></script>
+                <div class="caption-container item8">
+                    <h3>Nebula Pictured:</h3>
+                    <p class="caption">The Blue Horsehead Nebula</p>
+                    <h3>Telescope Used:</h3>
+                    <p class="caption">Photographer's personal ground-based telescope </p>
+                    <h3>Wavelength Captured In:</h3>
+                    <p class="caption">Visible Light</p>
+                    <h3>Distance of Object from Earth:</h3>
+                    <p class="caption">400 light-years</p>
+                    <h3>Date Captured:</h3>
+                    <p class="caption">September 20, 2012 </p>
+                    <h3>Image Source:</h3>
+                    <p class="caption last-item"><a
+                            href="https://en.wikipedia.org/wiki/File:Rho_Ophiucus_Widefield.jpg">Rogelio Bernal Andreo
+                            via Wikimedia Commons</a></p>
+                </div>
+                <div class="learn-more">
+                    <p>Click below for even more information on Reflection Nebulas</p>
+                    <a href="https://www.sun.org/encyclopedia/reflection-nebula" class="button slide-right">
+                        <h4>Learn More</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="x-wrapper">
+        <div class="container">
+            <h4 class="sources-header">SOURCES</h4>
+            <div class="footer-grid">
+                <div class="sources">
+                    <a href="https://theplanets.org/nebula-facts/reflection-nebula-facts/">
+                        <h3>"Reflection Nebula Facts"</h3>
+                        <p class="caption last-item">by The Planets.org</p>
+                    </a>
+                </div>
+                <div class="sources">
+                    <a href="https://www.sun.org/encyclopedia/reflection-nebula">
+                        <h3>"Reflection Nebula"</h3>
+                        <p class="caption last-item">by Sun.org</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
